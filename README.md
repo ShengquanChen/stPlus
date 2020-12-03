@@ -65,7 +65,7 @@ The dependencies will be installed along with stPlus.
 	stPlus_res = stPlus(spatial_df, scrna_df, genes_to_predict)
 ```
     
-stPlus can also be seamlessly integrated with Scanpy, a widely-used Python library for the analysis of single-cell data.
+stPlus can also be seamlessly integrated with [Scanpy](https://scanpy.readthedocs.io/en/stable/), a widely-used Python library for the analysis of single-cell data.
 ```python
 	import scanpy as sc
 	# Normalize and logarithmize the Scanpy objects of spatial_sc and scrna_sc if with raw counts
@@ -88,7 +88,8 @@ We also provide a [quick-start notebook](https://github.com/xy-chen16/stPlus/dem
 git clone git://github.com/xy-chen16/stPlus.git
 cd stPlus
 tar -zxvf data.tar.gz
-python stPlus.py --spatial_df_file data/osmFISH_df.csv --scrna_df_file data/Zeisel_df.csv --genes_file data/genes_to_predict.txt --output_file stPlus_res.csv
+python stPlus.py --spatial_df_file data/osmFISH_df.csv  --scrna_df_file data/Zeisel_df.csv \
+		 --genes_file data/genes_to_predict.txt --output_file stPlus_res.csv
 ```
 Look for more usage of stPlus iva
 
