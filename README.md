@@ -68,7 +68,8 @@ The dependencies will be installed along with stPlus.
 stPlus can also be seamlessly integrated with [Scanpy](https://scanpy.readthedocs.io/en/stable/), a widely-used Python library for the analysis of single-cell data.
 ```python
 	import scanpy as sc
-	# Normalize and logarithmize the Scanpy objects of spatial_sc and scrna_sc if with raw counts
+	# Load the spatial and scRNA-seq data as Scanpy objects (spatial_sc and scrna_sc)
+	# Normalize and logarithmize if the data contains raw counts
 	sc.pp.normalize_total(spatial_sc)
 	sc.pp.log1p(spatial_sc)
 	sc.pp.normalize_total(scrna_sc)
